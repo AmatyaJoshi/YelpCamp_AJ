@@ -28,9 +28,7 @@ const dbUrl = 'mongodb://localhost:27017/yelp-camp'
 // 'mongodb://localhost:27017/yelp-camp'
 mongoose.connect(dbUrl,  {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
 });
 
 const db = mongoose.connection;
